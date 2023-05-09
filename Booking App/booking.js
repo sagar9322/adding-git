@@ -1,3 +1,11 @@
+var count = 1;
+      var button = document.getElementById("btn");
+      button.addEventListener("click", function() {
+         count++;
+      });
+
+
+
 function printUserDetail(event) {
     event.preventDefault();
     // Get form input values
@@ -8,9 +16,5 @@ function printUserDetail(event) {
     const time = document.getElementById("time").value;
 
     // Log form input values to the console
-    console.log("Name: " + name);
-    console.log("Email: " + email);
-    console.log("Phone: " + phone);
-    console.log("Date: " + date);
-    console.log("Time: " + time);
+    localStorage.setItem("Candidate"+" "+count, `${name}-${email}-${phone}-${date}-${time}`);
 }
