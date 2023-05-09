@@ -6,6 +6,7 @@ var count = 1;
 
 
 
+      
 function printUserDetail(event) {
     event.preventDefault();
     // Get form input values
