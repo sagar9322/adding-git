@@ -19,6 +19,7 @@ function getTodos() {
     .catch(err => console.error(err));
   }
   
+  
   // PUT/PATCH REQUEST
   function updateTodo() {
     axios
